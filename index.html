@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Count Down</title>
+</head>
+<body>
+    <div class="overlay"> 
+        <div class="main">
+            <div class="item1 item_all"> Time is running fast!</div>
+            <div class="item2 item_all" id="date"></div>
+            <div class="item3cell item_all" id="col11"></div>
+            <div class="item3cell item_all" id="col12"></div>
+            <div class="item3cell item_all" id="col13"></div>
+            <div class="item3cell item_all" id="col14"></div>
+            <div class="item4cell item_all" id="col21">Days</div>
+            <div class="item4cell item_all" id="col22">Hours</div>
+            <div class="item4cell item_all" id="col23">Minutes</div>
+            <div class="item4cell item_all" id="col24">Seconds</div>
+            <div >
+                <button class="dateBtn"  onclick="dateSet()">Set Date</button>
+            </div>
+            <input type="datetime-local" name="inputdate" id="inputdate" class="dateinput" >
+            <input type="submit" value="OK" onclick="okClicked()" class="dateinput" id="okbtn">
+            <input type="button" value="cancel" class="dateinput" id="cancelbtn" onclick="cancelled()">
+        </div>
+        
+       
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
